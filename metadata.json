@@ -1,0 +1,8 @@
+{
+  "name": "Remix Immunoclass: Adaptive Immunity \u0026 Cell-Mediated Responses Master Suite",
+  "description": "Comprehensive interactive learning, visual pathway simulation, comparative analysis, and clinical mastery platform for Dr. Rana Habib\u0027s Immunology course on Adaptive \u0026 Cell-Mediated Immunity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

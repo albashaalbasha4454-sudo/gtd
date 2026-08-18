@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-maroon: #8b0a1a;
+    --color-maroon-dark: #660713;
+    --color-maroon-light: #a81326;
+    --color-maroon-accent: #c21835;
+    --color-slide-canvas: #f2f2f2;
+    --color-slide-cream: #FAF8F5;
+    --color-petroleum-teal: #006666;
+    --color-petroleum-dark: #003838;
+    --color-petroleum-light: #008080;
+    --color-petroleum-accent: #00a8a8;
+    --color-petroleum-border: #004d4d;
+    --color-petroleum-bg: #041416;
+  }
+
+  body {
+    font-family: 'Segoe UI', 'Cairo', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  [dir="ltr"] {
+    font-family: 'Segoe UI', 'Inter', 'Cairo', system-ui, sans-serif;
+  }
+
+  [dir="rtl"] {
+    font-family: 'Arial', 'Segoe UI', 'Cairo', Tahoma, sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .bg-maroon {
+    background-color: #8b0a1a;
+  }
+  .bg-maroon-dark {
+    background-color: #660713;
+  }
+  .text-maroon {
+    color: #8b0a1a;
+  }
+  .border-maroon {
+    border-color: #8b0a1a;
+  }
+  .bg-petroleum {
+    background-color: #006666;
+  }
+  .bg-petroleum-dark {
+    background-color: #041416;
+  }
+  .bg-petroleum-card {
+    background-color: #071f22;
+  }
+  .bg-petroleum-surface {
+    background-color: #0a292d;
+  }
+  .border-petroleum {
+    border-color: #004d4d;
+  }
+  .border-petroleum-teal {
+    border-color: #006666;
+  }
+  .text-petroleum-teal {
+    color: #00a8a8;
+  }
+  .text-petroleum-light {
+    color: #33cccc;
+  }
+
+  /* Side-border card styles matching the presentation's clinical aesthetic */
+  .card-teal-border {
+    border-inline-start-width: 4px;
+    border-inline-start-color: #8b0a1a;
+  }
+  .card-teal-border-hover:hover {
+    border-inline-start-color: #c21835;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(4, 20, 22, 0.8);
+    border-radius: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(139, 10, 26, 0.6);
+    border-radius: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(194, 24, 53, 0.8);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ASCII & Diagram styling */
+.diagram-box {
+  background: #061a1d;
+  border: 1px solid #8b0a1a;
+  box-shadow: 0 4px 20px -2px rgba(139, 10, 26, 0.15);
+}
+
+.diagram-node-teal {
+  background: linear-gradient(135deg, #660713 0%, #8b0a1a 100%);
+  border: 1px solid #c21835;
+  color: #ffffff;
+}
+
+.diagram-node-accent {
+  background: linear-gradient(135deg, #0e4047 0%, #155e69 100%);
+  border: 1px solid #2dd4bf;
+  color: #f0fdfa;
+}
